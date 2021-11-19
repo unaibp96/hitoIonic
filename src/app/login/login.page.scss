@@ -1,0 +1,58 @@
+#opcionesInicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 35px !important;
+}
+
+.exit {
+  margin-top: 25px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 90%;
+  font-size: x-large;
+}
+
+a {
+  text-decoration: none;
+}
+
+.olvidoContraseña {
+  text-align: center;
+  font-size: x-small;
+}
+
+.o {
+  text-align: center;
+  font-style: italic;
+}
+
+.politica {
+  padding-top: 55px;
+  text-align: center;
+  font-size: x-small;
+}
+
+#redSocial {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+
+.botIniciar {
+  border-style: solid;
+  border-color: rgb(236, 213, 7);
+  border-width: 0px 0px 3px 0px;
+}
+
+.opciones {
+  text-decoration: none;
+  color: black;
+}
+
+.olvido {
+  font-size: small;
+}

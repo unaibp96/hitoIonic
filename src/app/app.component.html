@@ -1,0 +1,73 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar>
+       
+          
+          <ion-buttons slot="end">
+            <ion-button><ion-icon [name]="'search'"></ion-icon></ion-button>
+          </ion-buttons>
+          <ion-buttons slot="end">
+            <ion-button><ion-icon [name]="'cart'"></ion-icon></ion-button>
+          </ion-buttons>
+      
+        </ion-toolbar>
+       
+        <div id="opcionesInicio">
+          <a href="/login">Iniciar sesion</a> <span>o</span>
+          <a href="/registro">Registrarse gratis</a>
+        </div>
+   
+        <hr>
+      </ion-header>
+      <ion-content id="content">
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" [routerLink]="'/folder'">
+              <ion-icon slot="start" [name]="'home'"></ion-icon>
+              <ion-label> Inicio </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'grid'"></ion-icon>
+              <ion-label> Todas las categorías </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'location'"></ion-icon>
+              <ion-label> Tiendas </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'pricetag'"></ion-icon>
+              <ion-label> Exclusivo </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'document'"></ion-icon>
+              <ion-label> Mis Pedidos </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'chatbubble-ellipses'"></ion-icon>
+              <ion-label> Mis Mensajes </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'heart'"></ion-icon>
+              <ion-label> Mis Favoritos </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'person'"></ion-icon>
+              <ion-label> Mi Cuenta </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'card'"></ion-icon>
+              <ion-label> Mis tarjetas de crédito </ion-label>
+            </ion-item>
+            <ion-item [routerDirection]="'root'" [routerLink]="''">
+              <ion-icon slot="start" [name]="'settings'"></ion-icon>
+              <ion-label> Ajustes </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

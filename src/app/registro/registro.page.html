@@ -1,0 +1,58 @@
+<ion-content>
+  <div class="exit">
+    <a lot="end" href="/folder/Inbox"><ion-icon name="close"></ion-icon></a>
+  </div>
+  <div id="opcionesInicio">
+    <div class="botRegistro">
+      <a href="/registro" class="opciones"><b>Regístrate</b></a>
+    </div>
+    <div class="botIniciar">
+      <a href="/login" class="opciones">Iniciar sesion</a>
+    </div>
+  </div>
+
+  <ion-list>
+    <form [formGroup]="usuario">
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input formControlName="email" autocapitalize="off"></ion-input>
+      </ion-item>
+      <ion-label
+        color="danger"
+        *ngIf="usuario.controls.email.errors?.email && (usuario.touched || usuario.dirty)"
+        >* El email no es válido.</ion-label
+      >
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+      </ion-item>
+      <ion-label
+        color="danger"
+        *ngIf="usuario.controls.password.errors?.minlength && (usuario.touched || usuario.dirty)"
+        >*La contraseña debe tener al menos 4 caracteres</ion-label
+      >
+      <div class="ion-padding">
+        <ion-button
+          [disabled]="!usuario.valid"
+          (click)="login()"
+          type="submit"
+          color="warning"
+          expand="block"
+          >Crear una cuenta
+        </ion-button>
+      </div>
+    </form>
+  </ion-list>
+  <p class="o">------------ o ------------</p>
+
+  <div id="redSocial">
+    <ion-icon name="logo-apple"></ion-icon>
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-google"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+  </div>
+
+  <p class="politica">
+    <a href="">Politica de privacidad</a>
+  </p>
+</ion-content>
