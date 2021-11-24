@@ -18,6 +18,22 @@ const routes: Routes = [
   {
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'cesta',
+    loadChildren: () => import('./cesta/cesta.module').then( m => m.CestaPageModule)
+  },
+  {
+    path: 'producto',
+    loadChildren: () => import('./producto/producto.module').then( m => m.ProductoPageModule)
+  },
+  {
+    path: 'pago',
+    loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
+  },
+  {
+    path: 'finalizar',
+    loadChildren: () => import('./finalizar/finalizar.module').then( m => m.FinalizarPageModule)
   }
 ];
 

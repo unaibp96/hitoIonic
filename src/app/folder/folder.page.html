@@ -5,45 +5,114 @@
     </ion-buttons>
     <ion-searchbar></ion-searchbar>
     <ion-buttons class="cesta" slot="end">
-      <ion-button>
+      <ion-button routerLink="/cesta">
         <ion-icon name="cart" color="black"></ion-icon>
       </ion-button>
     </ion-buttons>
-
   </ion-toolbar>
-
 </ion-header>
 
-<ion-content>
-  <ion-slides>
-    <ion-slide class="slide1">
-      <ion-tab-button>
-        <ion-label>Popular</ion-label>
-      </ion-tab-button>
-    </ion-slide>
-    <ion-slide class="slide2">
-      <ion-tab-button>
-        <ion-label>Venta al por mayor</ion-label>
-      </ion-tab-button>
-    </ion-slide>
-    <ion-slide class="slide3">
-      <ion-tab-button>
-        <ion-label>Zapatos y Accesorios</ion-label>
-      </ion-tab-button>
-    </ion-slide>
-  </ion-slides>
+<ion-content id="fondo">
+  <div id="fondo">
+    <ion-slides id="fondo">
+      <ion-slide class="slide1">
+        <ion-tab-button>
+          <ion-label>Popular</ion-label>
+        </ion-tab-button>
+      </ion-slide>
+      <ion-slide class="slide2">
+        <ion-tab-button>
+          <ion-label>Venta al por mayor</ion-label>
+        </ion-tab-button>
+      </ion-slide>
+      <ion-slide class="slide3">
+        <ion-tab-button>
+          <ion-label>Zapatos y Accesorios</ion-label>
+        </ion-tab-button>
+      </ion-slide>
+    </ion-slides>
 
-  <div id="colocacion">
-    <ion-icon name="grid"></ion-icon>
-    <ion-icon name="list"></ion-icon>
+    <div id="colocacion">
+      <div id="divspace-around">
+        <ion-icon name="grid"></ion-icon>
+        <ion-icon name="list"></ion-icon>
+      </div>
+    </div>
+
+    <div>
+      <ion-slides>
+        <ion-slide>
+          <img src="../../assets/img/banner2.PNG" alt="" />
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/banner3.PNG" alt="" />
+        </ion-slide>
+      </ion-slides>
+    </div>
   </div>
 
-  <ion-card>
-    <ion-card-content>
-      <img src="/src/assets/img/banner.PNG" alt="">
-    </ion-card-content>
-  </ion-card>
+  <div id="fondoAbajo">
+    <p><b>Oferta flash</b></p>
 
+    <div id="productosVarios">
+      <ion-slides>
+        <ion-slide class="slidemiddle">
+          <ion-card class="cardslider">
+            <img class="fotos" src="../../assets/img/producto1.png" alt="" />
+            <p class="precio">
+              <b>889€</b>
+               <br />
+              <s class="anteriorPrice">1000€</s>
+            </p>
+          </ion-card>
+          <ion-card class="cardslider">
+            <img class="fotos" src="../../assets/img/producto2.png" alt="" />
+            <p class="precio"><b>24,54€</b>
+              <br />
+            <s class="anteriorPrice">32,52€</s></p>
+          </ion-card>
+          <ion-card class="cardslider">
+            <img class="fotos" src="../../assets/img/producto3.png" alt="" />
+            <p class="precio"><b>110€</b>
+              <br />
+              <s class="anteriorPrice">120,99€</s></p>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </div>
 
+    <p><b>Solo para ti</b></p>
 
+    <div id="productosVarios">
+      <ion-slides>
+        <ion-slide class="slidemiddle">
+          <ion-card class="cardslider">
+            <img class="fotos" src="../../assets/img/producto4.png" alt="" />
+            <p class="precio">
+              <b>889€</b>
+               <br />
+              <s class="anteriorPrice">1000€</s>
+            </p>
+          </ion-card>
+          <ion-card class="cardslider">
+            <img class="fotos" src="../../assets/img/producto7.png" alt="" />
+            <p class="precio">
+              <b>889€</b>
+               <br />
+              <s class="anteriorPrice">1000€</s>
+            </p>
+          </ion-card>
+          <ion-card class="cardslider">
+            <img class="fotos" src="../../assets/img/producto6.png" alt="" />
+            <p class="precio">
+              <b>889€</b>
+               <br />
+              <s class="anteriorPrice">1000€</s>
+            </p>
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
 </ion-content>

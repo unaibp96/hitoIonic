@@ -1,0 +1,54 @@
+<ion-content>
+  <div class="exit">
+    <a routerLink="/folder/Inbox">
+      <ion-icon name="chevron-back"></ion-icon>
+    </a>
+    <div>
+      <a>
+        <ion-icon name="information-circle" routerLink="/producto" ></ion-icon>
+      </a>
+      <a>
+        <ion-icon name="trash"></ion-icon>
+      </a>
+    </div>
+  </div>
+
+  <h1>Cesta</h1>
+  <ion-list>
+    <ion-item>
+      <div id="producto">
+        <ion-checkbox></ion-checkbox>
+
+        <img src="../../assets/img/producto1.png" alt="" />
+
+        <div class="especificaciones">
+          <div class="precios">
+            <b>Samsung Galaxy S20</b>
+            <b class="precioNuevo">899€</b>
+            <s class="precioViejo">1000€</s>
+          </div>
+          <div class="masMenos">
+            <ion-button><ion-icon name="add"></ion-icon></ion-button>
+            <span>1</span>
+            <ion-button><ion-icon name="remove"></ion-icon></ion-button>
+          </div>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div id="footer">
+      <div class="check">
+        <ion-checkbox></ion-checkbox>
+        <span>Todas</span>
+      </div>
+      <div class="especificaciones">
+        <b>0€</b>
+      </div>
+      <ion-button color="warning" routerLink="/pago">Pagar</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

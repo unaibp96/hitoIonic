@@ -31,6 +31,11 @@
         *ngIf="usuario.controls.password.errors?.minlength && (usuario.touched || usuario.dirty)"
         >*La contraseña debe tener al menos 4 caracteres</ion-label
       >
+
+      <div class="recordar">
+        <ion-checkbox class="check"></ion-checkbox>
+        <ion-label class="recuerdoCon">Recordar mi contraseña</ion-label>
+      </div>
       <div class="ion-padding">
         <ion-button
           [disabled]="!usuario.valid"

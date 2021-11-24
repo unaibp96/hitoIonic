@@ -1,0 +1,70 @@
+.exit {
+    font-size: xx-large;
+    margin-top: 30px !important;
+
+}
+
+h1 {
+    padding-left: 4px;
+}
+.producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5px;
+
+}
+.precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.precioNuevo{
+    font-size: xx-large;
+    color: red;
+}
+
+.precioViejo{
+    font-size: small;
+    color: gray;
+}
+.NombreFoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.descripcion{
+    width: 50%;
+    font-size: small;
+    align-items: center;
+    padding-left: 5px;
+    color: gray;
+    
+}
+
+.starDescri{
+    align-items: center;
+}
+
+.estrellas{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+
+.info{
+    padding-left: 5px;
+}
+
+.votos{
+    font-size: small;
+    align-items: center;
+    color: gray;
+}

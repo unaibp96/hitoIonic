@@ -2,8 +2,22 @@ ion-menu-button {
   color: var(--ion-color-primary);
 }
 
-ion-toolbar{
+ion-toolbar {
   padding-top: 25px !important;
+  --background: hsl(44, 94%, 51%);
+}
+#fondo {
+  --background: hsl(44, 94%, 51%) !important;
+}
+#fondoAbajo {
+  background-color: white !important;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+ion-searchbar {
+  --background: white !important;
 }
 
 #container {
@@ -37,7 +51,7 @@ ion-toolbar{
 
 .slide1 {
   width: 50px !important;
-  padding-left: 90px !important;
+  padding-left: 75px !important;
   text-align: start;
 }
 
@@ -47,12 +61,7 @@ ion-toolbar{
 }
 .slide3 {
   width: 50px !important;
-  padding-left: 160px !important;
-}
-
-ion-slides {
-  margin-left: 0px !important;
-  width: 100% !important;
+  padding-left: 150px !important;
 }
 
 ion-label {
@@ -64,15 +73,50 @@ ion-label {
   justify-content: space-between;
 }
 
-#colocacion{
+#colocacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 45px;
+  font-size: large;
+  width: 100%;
+  align-items: center;
+  background-color: hsl(44, 94%, 51%) !important;
+}
+
+#divspace-around {
+  width: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-right: 3px;
-  font-size: large;
-  width: 20%;
-  padding-top: 6px;
-  float: right;
-  
 }
 
+.fotos {
+  margin: 0px auto;
+  width: 100px;
+}
+ion-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 110px;
+  height: 100%;
+  text-align: center;
+  margin: 0px 0px 0px 20px !important;
+}
+
+.slidemiddle {
+  width: 379px !important;
+}
+.precio{
+  text-align: start;
+  padding-left: 4%;
+  color: #a31616;
+}
+
+.anteriorPrice{
+  text-align: start;
+  padding-left: 4%;
+  color: grey;
+  
+}

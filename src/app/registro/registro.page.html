@@ -31,6 +31,10 @@
         *ngIf="usuario.controls.password.errors?.minlength && (usuario.touched || usuario.dirty)"
         >*La contraseña debe tener al menos 4 caracteres</ion-label
       >
+      <div class="aceptacion">
+      <ion-checkbox class="check"></ion-checkbox>
+      <ion-label class="aceptar">Acepto los terminos y condiciones</ion-label>
+    </div>
       <div class="ion-padding">
         <ion-button
           [disabled]="!usuario.valid"
@@ -54,5 +58,8 @@
 
   <p class="politica">
     <a href="">Politica de privacidad</a>
+  </p>
+  <p class="terminos">
+    <a href="">Términos y condiciones</a>
   </p>
 </ion-content>
