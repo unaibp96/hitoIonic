@@ -5,7 +5,7 @@
     </a>
     <div>
       <a>
-        <ion-icon name="information-circle" routerLink="/producto" ></ion-icon>
+        <ion-icon name="information-circle" routerLink="/producto"></ion-icon>
       </a>
       <a>
         <ion-icon name="trash"></ion-icon>
@@ -17,7 +17,7 @@
   <ion-list>
     <ion-item>
       <div id="producto">
-        <ion-checkbox></ion-checkbox>
+        <ion-checkbox checked></ion-checkbox>
 
         <img src="../../assets/img/producto1.png" alt="" />
 
@@ -28,9 +28,14 @@
             <s class="precioViejo">1000€</s>
           </div>
           <div class="masMenos">
-            <ion-button><ion-icon name="add"></ion-icon></ion-button>
+            <ion-button>
+              <ion-icon name="remove"></ion-icon>
+            </ion-button>
             <span>1</span>
-            <ion-button><ion-icon name="remove"></ion-icon></ion-button>
+
+            <ion-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-button>
           </div>
         </div>
       </div>
@@ -46,7 +51,7 @@
         <span>Todas</span>
       </div>
       <div class="especificaciones">
-        <b>0€</b>
+        <b>899€</b>
       </div>
       <ion-button color="warning" routerLink="/pago">Pagar</ion-button>
     </div>
